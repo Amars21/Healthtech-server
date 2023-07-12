@@ -1,0 +1,10 @@
+module.exports = (sequelize, DataTypes) => {
+    const Prescription = sequelize.define("Prescription", {
+      prescription: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
+    });
+   
+    return Prescription;
+  };

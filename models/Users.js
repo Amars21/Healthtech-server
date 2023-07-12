@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false
       },
       date: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         allowNull: false
       },
       email: {
@@ -29,11 +29,6 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: true
       },
     });
-  
-    // Users.associate = (models) => {
-    //   Users.hasMany(models.Posts, {
-    //     onDelete: "cascade",
-    //   });
-    // };
+
     return Users;
   };

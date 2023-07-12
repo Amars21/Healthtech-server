@@ -36,10 +36,12 @@ router.post("/", async (req, res) => {
         { email: user.email, id: user.id },
         "amaramar"
       );
+      
       const role = user.role;
       const firstName = user.firstName;
+      const lastName = user.lastName;
   
-      res.json({ accessToken, role, firstName });
+      res.json({ accessToken, role, firstName, lastName });
     });
   });
 
